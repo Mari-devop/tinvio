@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Gilroy:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+
+:root {
+    --font-family-primary: 'Gilroy', sans-serif;
+    --font-family-secondary: 'Inter', sans-serif;
+    --primary-text-color: #FF474D;
+    --main-text-color: #212121;
+    --white-color: #FFFFFF;
+    --second-text-color: #5C5C5C;
+    --placeholder-text-color: #BDBDBD;
+    --input-color: #F3F4F5;
+    --bg-grey-color: #F3F4F5;
+    --bg-black-color: #363636;
+    --bg-el-15: radial-gradient(#DADADA26 15%, #FAFAFA26 15%);
+    --bg-el-20: radial-gradient(#FFFFFF 20%, #FAFAFA 20%);
+    --bg-el-60: radial-gradient(#FFFFFF 60%, #FAFAFA 60%);
+    --bg-el-50: radial-gradient(#F6F5F580 50%, #FAFAFA 50%);
+    --primary-btn-color: #FF474D;
+}

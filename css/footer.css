@@ -1,0 +1,117 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 75rem;
+}
+
+.tp-footer__left, 
+.tp-footer__right {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+}
+
+.tp-header__nav-list {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.tp-header__nav-list a {
+    text-decoration: none;
+    color: var(--second-text-color);
+}
+
+.foot {
+    position: relative;
+    top: 75rem;
+    margin-bottom: 2rem;
+}
+.tp-footer__foot--small {
+    display: none;
+}
+@media (max-width: 1440px) {
+    .footer {
+        top: 65rem;
+    }
+    .foot {
+        top: 65rem;
+    }
+}
+@media (max-width: 1125px) {
+    .tp-footer__left, 
+    .tp-footer__right {
+        gap: 0.5rem;
+    }
+}
+@media (max-width: 1024px) {
+    .footer {
+        top: 20rem;
+    }
+    .foot {
+        top: 20rem;
+    }
+}
+@media (max-width: 880px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .tp-footer__left {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .tp-footer__pipe {
+        display: none;
+    }
+    .tp-footer__right {
+        margin-top: 1rem;
+    }
+    .tp-header__nav-list {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .foot {
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    }
+}
+@media (max-width: 768px) {
+    .footer {
+        top: 75rem;
+    }
+    .foot {
+        top: 75rem;  
+    }
+}
+@media (max-width: 375px) {
+    .footer {
+        top: 70rem;
+    }
+    .foot {
+        top: 60rem;  
+    }
+    .tp-header__nav-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .tp-footer__right {
+        flex-direction: column;
+    }
+    .tp-footer__foot--small {
+        display: block;
+        position: relative;
+        top: 10rem;
+        margin-bottom: 2rem;
+    }
+    .tp-footer__foot {
+        display: none;
+    }
+}

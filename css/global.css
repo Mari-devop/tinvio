@@ -1,0 +1,122 @@
+/* Titles */
+.tittle-1 {
+    font-family: var(--font-family-primary);
+    font-size: 3rem; 
+    line-height: 3.6875rem; 
+    font-weight: 500; 
+}
+
+.tittle-2 {
+    font-family: var(--font-family-primary);
+    font-size: 2.75rem; /* 44px */
+    line-height: 3.375rem; /* 54px */
+    font-weight: 600; /* Semibold */
+}
+
+.tittle-3 {
+    font-family: var(--font-family-primary);
+    font-size: 2.25rem; /* 36px */
+    line-height: 2.75rem; /* 44px */
+    font-weight: 600; /* Semibold */
+}
+
+.tittle-4 {
+    font-family: var(--font-family-primary);
+    font-size: 2rem; /* 32px */
+    line-height: 2.4375rem; /* 39px */
+    font-weight: 600; /* Semibold */
+}
+
+.tittle-5 {
+    font-family: var(--font-family-primary);
+    font-size: 1.75rem; /* 28px */
+    line-height: 2.125rem; /* 34px */
+    font-weight: 600; /* Semibold */
+}
+
+/* Subtitles */
+.subtitle-1 {
+    font-family: var(--font-family-primary);
+    font-size: 1.5rem; /* 24px */
+    line-height: 1.8125rem; /* 29px */
+    font-weight: 600; /* Semibold */
+}
+
+.subtitle-2 {
+    font-family: var(--font-family-primary);
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.8125rem; /* 29px */
+    font-weight: 600; /* Semibold */
+}
+
+/* Description */
+.description {
+    font-family: var(--font-family-primary);
+    font-size: 0.875rem; /* 14px */
+    line-height: 1.5rem; /* 24px */
+    font-weight: 500; /* Medium */
+}
+
+/* Buttons */
+.button {
+    font-family: var(--font-family-primary);
+    font-size: 1rem; 
+    line-height: 1.25rem; 
+    padding: 0.8rem 1.8rem;
+    border: none;
+}
+
+.header-tabs {
+    font-family: var(--font-family-primary);
+    font-size: 1rem; /* 16px */
+    line-height: 1.1875rem; /* 19px */
+    font-weight: 500; /* Medium */
+}
+
+.header-button {
+    font-family: var(--font-family-primary);
+    font-size: 0.875rem; /* 14px */
+    line-height: 1.0625rem; /* 17px */
+    font-weight: 700; /* Bold */
+}
+
+/* Body Text */
+.body-1 {
+    font-family: var(--font-family-secondary);
+    font-size: 1.125rem; 
+    line-height: 1.4375rem; 
+    font-weight: 400; 
+    color: var(--second-text-color);
+}
+
+.body-2 {
+    font-family: var(--font-family-secondary);
+    font-size: 1rem; /* 16px */
+    line-height: 1.4375rem; /* 23px */
+    font-weight: 400; /* Regular */
+    color: var(--second-text-color);
+}
+
+/* Placeholder */
+.placeholder {
+    font-family: var(--font-family-secondary);
+    font-size: 0.875rem; /* 14px */
+    line-height: 1.0625rem; /* 17px */
+    font-weight: 400; /* Regular */
+}
+
+/* Tabs */
+.tabs {
+    font-family: var(--font-family-secondary);
+    font-size: 0.875rem; /* 14px */
+    line-height: 1.0625rem; /* 17px */
+    font-weight: 400; /* Regular */
+}
+
+/* Error */
+.error {
+    font-family: var(--font-family-secondary);
+    font-size: 0.75rem; /* 12px */
+    line-height: 0.9375rem; /* 15px */
+    font-weight: 400; /* Regular */
+}

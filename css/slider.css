@@ -1,0 +1,115 @@
+.slider {
+    position: relative;
+    top: 13rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tp-slider__bg1920 {
+    position: absolute;
+    top: 5rem;
+    left: -18rem;
+}
+.tp-slider {
+    position: relative;
+    top: 23rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+}
+.tp-slider__tittle{
+    position: relative;
+    color: var(--white-color);
+    bottom: 3rem;
+}
+.tp-slider__image-1920 {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+.tp-slider__image-1920.active {
+    display: block;
+}
+.tp-slider__pagination {
+    position: relative;
+    top: 40rem;
+    right: 40rem;
+    display: flex;
+    gap: 1rem;
+}
+.tp-slider__pagination-item {
+    cursor: pointer;
+    width: 1rem;
+    height: 1rem;
+}
+.tp-slider__bgsmall {
+    display: none;
+}
+@media (max-width: 1440px) {
+    .slider {
+        top: 1rem;
+    }
+}
+@media (max-width: 1280px) {
+    .tp-slider__pagination {
+        right: 30rem;
+    }
+    .slider {
+        top: -1rem;
+    }
+}
+@media (max-width: 1024px) {
+    .slider {
+        top: -30rem;
+    }
+}
+@media (max-width: 768px) {
+    .slider {
+        top: 8rem;
+    }
+    .tp-slider__bgsmall {
+        display: block;
+        position: absolute;
+        top: 15rem;
+        left: 0rem;
+        z-index: -1;
+    }
+    .tp-slider__bg1920 {
+        display: none;
+    }
+    .tp-slider__image-1920 {
+        position: relative;
+        top: 12rem;
+        left: 3rem;
+    }
+    .tp-slider__pagination {
+        top: 60rem;
+        right: 15rem;
+        z-index: 1;
+    }
+    .tp-slider__tittle {
+        bottom: -10rem;
+        left: 3rem;
+        z-index: 1;
+    }
+}
+
+@media (max-width: 375px) {
+    .slider {
+        top: 3rem;
+    }
+    .tp-slider__tittle {
+        bottom: -15rem;
+        left: 5rem;
+        z-index: 1;
+        
+    }
+    .tp-slider__image-1920 {
+        top: 20rem;
+    }
+    .tp-slider__pagination {
+        top: 65rem;
+        right: 7rem;
+    }
+}
