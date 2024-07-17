@@ -1,0 +1,114 @@
+.cite {
+    margin-top: 15rem;
+}
+.tp-cite__bg,
+.tp-cite__bgMask {
+    position: absolute;
+    top: 10rem;
+    left: -22rem;
+    z-index: -1;
+}
+.tp-cite__bgMask768, 
+.tp-cite__bg768,
+.tp-cite__bg375,
+.tp-cite__bgMask375 {
+    display: none;
+}
+.tp-cite__shine {
+    position: absolute;
+    top: 11rem;
+    left: 6rem;
+}
+.tp-cite__text {
+    position: relative;
+    top: 13rem;
+    left: -15rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.tp-cite__title  {
+    color: var(--white-color);
+    font-weight: 400;
+    width: 70%;
+    position: relative;
+}
+.tp-cite__button {
+    border-radius: 1rem;
+    position: relative;
+}
+
+@media (max-width: 1440px) {
+    .tp-cite__title {
+        font-size: 2rem;
+        left: 8rem;
+    }
+}
+@media (max-width: 1280px) {
+    .tp-cite__title {
+        left: 12rem;
+    }
+}
+@media (max-width: 1024px) {
+    .tp-cite__title {
+        font-size: 1.5rem;
+        left: 12rem;
+    }
+    .tp-cite__button {
+        right: -10rem;
+    }
+}
+@media (max-width: 768px) {
+    .cite {
+        margin-top: 55rem;
+    }
+    .tp-cite__text {
+        flex-direction: column;
+        top: 5rem;
+        left: -10rem;
+    }
+    .tp-cite__shine {
+        top: 6rem;
+        left: 6rem;
+    }
+    .tp-cite__bg,
+    .tp-cite__bgMask,
+    .tp-cite__bg375,
+    .tp-cite__bgMask375 {
+        display: none;
+    }
+    .tp-cite__bgMask768, 
+    .tp-cite__bg768 {
+        display: block;
+        position: absolute;
+    }
+}
+@media (max-width: 375px) {
+    .cite {
+        margin-top: 25rem;
+    }
+    .tp-cite__text {
+        top: 1rem;
+        left: -12rem;
+    }
+    .tp-cite__title {
+        font-size: 1.2rem;
+        line-height: 2rem;
+        text-align: center;
+        left: 12rem;
+    }
+    .tp-cite__button {
+        top: 3rem;
+        left: 12rem;
+    }
+    .tp-cite__bg375,
+    .tp-cite__bgMask375 {
+        display: block;
+        position: absolute;
+    }
+    .tp-cite__bgMask768, 
+    .tp-cite__bg768  {
+        display: none;
+    }
+}

@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             listItems.forEach(item => {
                 if (item.getAttribute('data-content') === tabContent) {
-                    item.style.display = 'flex'; // Use 'flex' to keep the image and text aligned
+                    item.style.display = 'flex'; 
                 } else {
                     item.style.display = 'none';
                 }
@@ -105,7 +105,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('resize', updateSlideImages);
 
-    updateSlideImages(); // Update images on load
-    showSlide(currentSlide); // Show the first slide initially
+    updateSlideImages(); 
+    showSlide(currentSlide); 
+});
+
+//faq section
+document.addEventListener('DOMContentLoaded', () => {
+    const faqItems = document.querySelectorAll('.tp-faq__question');
+
+    faqItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const answerId = item.getAttribute('data-answer');
+            const answer = document.getElementById(answerId);
+
+            if (answer.style.display === 'block') {
+                answer.style.display = 'none';
+                item.querySelector('.tp-faq__icon').textContent = '+';
+            } else {
+                answer.style.display = 'block';
+                item.querySelector('.tp-faq__icon').textContent = '-';
+            }
+        });
+    });
 });
 

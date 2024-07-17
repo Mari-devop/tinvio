@@ -1,0 +1,253 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.propose {
+    position: relative;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin-top: 11.25rem;
+}
+.tp-propose__title {
+    margin-bottom: 2rem;
+}
+.tp-propose__bg {
+    position: absolute;
+    top: 5rem; 
+    left: -22rem;
+    z-index: -1;
+}
+.tp-propose__bg768,
+.tp-propose__desk768,
+.tp-propose__bg375 {
+    display: none;
+}
+.tp-propose__top,
+.tp-propose__shine,
+.tp-propose__down,
+.tp-propose__patern {
+    position: absolute;
+}
+.tp-propose__shine {
+    top: 1rem;
+    right: -12rem;
+}
+.tp-propose__top {
+    top: 5rem;
+    left: -22rem;
+}
+.tp-propose__down {
+    bottom: -2rem;
+    right: 35rem;
+    z-index: 0;
+}
+.tp-propose__patern {
+    bottom: -2rem;
+    right: 20rem;
+}
+.tp-propose__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+.tp-propose__text {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    max-width: 50%;
+    position: relative;
+}
+.tp-propose__tab {
+    padding: 1rem;
+    position: relative;
+}
+.tp-propose__list {
+    position: absolute;
+    top: -0.5rem;
+    left: 1rem;
+}
+.tp-propose__tab-title {
+    font-size: 1.2rem;
+    color: var(--white-color);
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    padding-left: 2rem;
+}
+
+.tp-propose__tab-description {
+    color: var(--white-color);
+    font-size: 1rem;
+    line-height: 1.5;
+    padding-left: 2rem;
+}
+.tp-propose__desk {
+    position: absolute;
+    top: 0.5rem;
+    left: 42rem;
+    max-width: 100%;
+    height: auto;
+    z-index: 1;
+}
+@media (max-width: 1440px) {
+    .tp-propose__desk {
+        left: 40rem;
+    }
+    .tp-propose__shine {
+        right: -10rem;
+    }
+}
+@media (max-width: 1280px) {
+    .tp-propose__desk {
+        max-width: 45%;
+        height: auto;
+        top: 3rem;
+    }
+    .tp-propose__shine {
+        right: -3rem;
+    }
+}
+@media (max-width: 1024px) {
+    .tp-propose__desk {
+        max-width: 60%;
+        height: auto;
+        top: 2rem;
+    }
+    .tp-propose__shine {
+        right: -3rem;
+    }
+}
+@media (max-width: 768px) {
+    .propose {
+        margin-top: 5rem;
+    }
+    .tp-propose__title {
+        font-size: 1.8rem;
+    }
+    .tp-propose__content {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .tp-propose__text {
+        max-width: 90%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "chats orders"
+            "payments payments"
+            "more more";
+    }
+    .tp-propose__tab:nth-child(1) {
+        grid-area: chats;
+        max-width: 90%;
+    }
+    .tp-propose__tab:nth-child(2) {
+        grid-area: orders;
+        max-width: 80%;
+    }
+    .tp-propose__tab:nth-child(3) {
+        grid-area: payments;
+        max-width: 40%;
+    }
+    .tp-propose__tab:nth-child(4) {
+        grid-area: more;
+        max-width: 40%;
+    }
+    .tp-propose__desk,
+    .tp-propose__bg  {
+        display: none;
+    }
+    .tp-propose__bg768,
+    .tp-propose__desk768 {
+        display: block;
+        position: absolute;
+    }
+    .tp-propose__bg768 {
+        top: 5rem;
+        left: -2rem;
+    }
+    .tp-propose__desk768 {
+        top: 14rem;
+        right: -2rem;
+    }
+    .tp-propose__shine {
+        top: 14rem;
+    }
+    .tp-propose__down,
+    .tp-propose__patern {
+        bottom: -7rem;
+    }
+}
+@media (max-width: 375px) {
+    .tp-propose__bg768,
+    .tp-propose__desk768,
+    .tp-propose__shine {
+        display: none;
+    }
+    .tp-propose__bg375 {
+        display: block;
+        position: absolute;
+        top: 5rem;
+        left: -1rem;
+    }
+    .tp-propose__title {
+        font-size: 1.5rem;
+        line-height: 1.7rem;
+    }
+    .tp-propose__content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .tp-propose__text {
+        max-width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:
+            "chats"
+            "orders"
+            "payments"
+            "more";
+    }
+    .tp-propose__tab:nth-child(1) {
+        grid-area: chats;
+        max-width: 100%;
+    }
+    .tp-propose__tab:nth-child(2) {
+        grid-area: orders;
+        max-width: 100%;
+    }
+    .tp-propose__tab:nth-child(3) {
+        grid-area: payments;
+        max-width: 100%;
+    }
+    .tp-propose__tab:nth-child(4) {
+        grid-area: more;
+        max-width: 100%;
+    }
+    .tp-propose__desk {
+        display: block;
+        max-width: 100%;
+        margin-top: 2rem;
+        position: relative;
+        left: 0;
+        top: -2rem;
+    }
+    .tp-propose__down,
+    .tp-propose__patern {
+        bottom: 16rem;
+    }
+    .tp-propose__down {
+        right: 2rem;
+    }
+    .tp-propose__patern {
+        right: -9rem;
+    }
+}

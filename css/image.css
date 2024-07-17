@@ -1,0 +1,60 @@
+.tp-container {
+    position: relative;
+    margin: 1rem auto;
+    padding: 0 1rem;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+}
+
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.main-image {
+    margin-top: 4.125rem;
+}
+
+.main-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.tp-main-image__top,
+.tp-main-image__down {
+    position: absolute;
+}
+
+.tp-main-image__top {
+    top: -2rem; 
+    right: -2rem; 
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+.tp-main-image__down {
+    bottom: -4rem; 
+    left: -2rem; 
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+@media (max-width: 375px) {
+    .main-image {
+        margin-top: 1.125rem;
+    }
+
+    .tp-main-image__top {
+        top: -1rem; 
+        right: -1rem; 
+    }
+
+    .tp-main-image__down {
+        bottom: -1rem; 
+        left: -1rem; 
+    }
+}

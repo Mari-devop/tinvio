@@ -5,26 +5,31 @@ body, html {
     overflow-x: hidden;
     width: 100%;
 }
+
 .tp-container {
     margin: 1rem 19rem;
     padding: 0 1rem; 
     max-width: 1200px; 
 }
+
 .tp-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
 }
+
 .tp-header__container {
     display: flex;
     align-items: center;
     position: relative;
 }
+
 .tp-header__lang {
     padding-left: 1rem;
     position: relative;
 }
+
 .lang__button {
     background: none;
     border: none;
@@ -33,12 +38,15 @@ body, html {
     display: flex;
     align-items: center;
 }
+
 .lang__button-img {
     width: 0.6rem;
     height: 0.3rem;
     padding-left: 0.3rem;
 }
+
 .lang__dropdown {
+    display: none; /* Add this line to ensure dropdowns are hidden by default */
     position: absolute;
     top: 100%;
     background: #fff;
@@ -49,12 +57,15 @@ body, html {
     margin: 0;
     width: 100px;
 }
+
 .lang__dropdown--desktop {
     left: 0;
 }
+
 .lang__dropdown--mobile {
     left: 9rem;
 }
+
 .lang__dropdown li {
     display: flex;
     align-items: center;
@@ -62,27 +73,32 @@ body, html {
     padding: 10px;
     cursor: pointer;
 }
+
 .lang__dropdown li img {
     width: 70%;
     height: auto;
 }
+
 .tp-header__nav {
     display: flex;
     align-items: center;
 }
+
 .tp-header__nav-list {
     list-style: none;
     display: flex;
-    gap: 4.5rem;
 }
+
 .tp-header__nav-item a {
     text-decoration: none;
     color: var(--main-text-color);
     padding-right: 4.5rem;
 }
+
 .tp-header__nav-item a:hover {
     color: var(--primary-text-color);
 }
+
 .tp-header__btn-main {
     background-color: var(--white-color);
     color: var(--main-text-color);
@@ -92,12 +108,25 @@ body, html {
     cursor: pointer;
     font-weight: 700; 
 }
+
+.tp-header__btn-main-feature {
+    background-color: var(--primary-text-color);
+    color: var(--white-color);
+    padding: 0.8rem 2.3rem;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-weight: 700; 
+}
+
 .tp-header__hamburger {
     display: none;
 }
+
 .tp-header__mobile {
     display: none;
 }
+
 .tp-header__mobile-nav {
     display: none;
     flex-direction: column;
@@ -111,12 +140,14 @@ body, html {
     padding: 1rem;
     text-align: center;
 }
+
 .tp-header__mobile-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
 }
+
 .tp-header__mobile-close {
     background: none;
     border: none;
@@ -124,16 +155,19 @@ body, html {
     cursor: pointer;
     padding-right: 2rem;
 }
+
 .tp-header__mobile-nav-list {
     list-style: none;
     padding: 0;
     margin: 8rem 0 0 0;
     width: 100%;
 }
+
 .tp-header__mobile-nav-item {
     margin: 2rem 0;
     font-size: 1.1rem;
 }
+
 .tp-header__mobile-nav-item a,
 .tp-header__mobile-nav-item button {
     display: block;
@@ -141,10 +175,12 @@ body, html {
     text-decoration: none;
     color: var(--main-text-color);
 }
+
 .tp-header__mobile-nav-item a:hover,
 .tp-header__mobile-nav-item button:hover {
     color: var(--primary-text-color);
 }
+
 .tp-header__btn-mobile {
     color: var(--white-color);
     background-color: var(--primary-text-color);
@@ -154,11 +190,13 @@ body, html {
     font-weight: 700;
     margin: 12rem auto 1rem;
 }
+
 .tp-header__social-icon {
     display: block;
     margin: 1rem auto;
     max-width: 300px;
 }
+
 .tp-header__rect1-img,
 .tp-header__rect2-img,
 .tp-header__patern-img {
@@ -166,22 +204,27 @@ body, html {
     position: absolute;
     z-index: -1;
 }
+
 .tp-header__rect1-img {
     top: 16rem;
     left: -1rem;
 }
+
 .tp-header__rect2-img {
     top: -1rem;
     right: 0;
 }
+
 .tp-header__patern-img {
     bottom: 8rem;
     right: -1rem;
 }
+
 @media (max-width: 1440px) {
     .tp-container {
         margin: 1rem 7.75rem;
     }
+
     .tp-header__nav-item a {
         padding-right: 1rem;
     }
@@ -192,10 +235,12 @@ body, html {
         margin: 1rem 2.5rem;
     }
 }
+
 @media (max-width: 900px) {
     .tp-header__lang {
         display: none;
     }
+
     .lang__button {
         padding-left: 1rem;
     }
@@ -205,6 +250,7 @@ body, html {
     .tp-container {
         margin: 1rem;
     }
+
     .tp-header__nav,
     .tp-header__btn {
         display: none;
@@ -218,6 +264,7 @@ body, html {
     .tp-header__mobile-nav {
         display: none;
     }
+
     .tp-header__mobile {
         display: block;
     }
@@ -227,14 +274,17 @@ body, html {
     .tp-container {
         padding: 1rem;
     }
+
     .tp-header__container {
         flex-direction: row;
         align-items: center;
         justify-content: center;
     }
+
     .tp-header__logo {
         margin-bottom: 0.5rem;
     }
+
     .tp-header__lang {
         padding-left: 0;
         margin-bottom: 1rem;
