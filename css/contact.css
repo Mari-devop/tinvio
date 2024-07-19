@@ -1,0 +1,212 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.tp-container {
+    position: relative;
+    margin: 1rem auto;
+    padding: 0 1rem;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact {
+    position: relative;
+    width: 100%;
+    top: 60rem;
+}
+
+.tp-contact__context {
+    width: 100%;
+    text-align: center;
+}
+
+.tp-contact__context-title {
+    margin-bottom: 3rem;
+    font-weight: 400;
+}
+
+.tp-contact__blocks {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.tp-contact__blocks-item {
+    flex: 1;
+    position: relative;
+    padding-top: 10rem;  
+}
+
+.tp-contact__blocks-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.tp-contact__BgContact {
+    z-index: -3;
+}
+
+.tp-contact__MaskContact {
+    z-index: -2;
+}
+
+.tp-contact__BgBus {
+    z-index: -3;
+}
+
+.tp-contact__MaskBus {
+    z-index: -2;
+}
+
+.tp-contact__BgMedia {
+    z-index: -3;
+}
+
+.tp-contact__MaskMedia {
+    z-index: -2;
+}
+
+.tp-contact__item-tittle {
+    margin-bottom: 3rem;
+    font-weight: 400;
+    position: relative;
+    z-index: 1;
+}
+
+.tp-contact__item-description {
+    margin-bottom: 5rem;
+    padding: 0 1rem;
+    font-size: 1.3rem;
+    color: var(--second-text-color);
+    position: relative;
+    z-index: 1;
+}
+
+.tp-contact_btn {
+    background-color: var(--primary-color);
+    color: var(--second-text-color);
+    padding: 0.75rem 1.5rem;
+    border: 1px solid var(--second-text-color);
+    border-radius: 1rem;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+.tp-contact_btn:hover {
+    background-color: var(--primary-color-dark);
+}
+.button--color{
+    background-color: var(--white-color);
+}
+.tittle-4--color {
+    color: var(--white-color);
+}
+.tp-contact__BgContact768,
+.tp-contact__MaskContact768,
+.tp-contact__BgContact375,
+.tp-contact__MaskContact375,
+.tp-contact__BgBus768,
+.tp-contact__MaskBus768,
+.tp-contact__BgBus375,
+.tp-contact__MaskBus375,
+.tp-contact__BgMedia768,
+.tp-contact__MaskMedia768,
+.tp-contact__BgMedia375,
+.tp-contact__MaskMedia375   {
+    display: none;
+}
+@media screen and (max-width: 1024px) {
+    .tp-contact__blocks-item {
+        flex: 1;
+        position: relative;
+        padding-top: 5rem;  
+    }
+}
+@media (max-width: 768px) {
+    .contact {
+        top: 80rem;
+    }
+    .tp-contact__blocks {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tp-contact__blocks-item {
+        padding-top: 2rem;
+    }
+
+    .tp-contact__item-tittle {
+        margin-bottom: 1rem;
+    }
+
+    .tp-contact__item-description {
+        margin-bottom: 1rem;
+        font-size: 1rem;
+    }
+
+    .tp-contact_btn {
+        padding: 0.5rem 1rem;
+    }
+    .tp-contact__BgContact768,
+    .tp-contact__MaskContact768,
+    .tp-contact__BgBus768,
+    .tp-contact__MaskBus768,
+    .tp-contact__BgMedia768,
+    .tp-contact__MaskMedia768 {
+        display: block;
+        position: absolute;
+    }
+    .tp-contact__BgContact,
+    .tp-contact__MaskContact,
+    .tp-contact__BgContact,
+    .tp-contact__MaskContact,
+    .tp-contact__BgBus,
+    .tp-contact__MaskBus,
+    .tp-contact__BgBus,
+    .tp-contact__MaskBus,
+    .tp-contact__BgMedia,
+    .tp-contact__MaskMedia,
+    .tp-contact__BgMedia,
+    .tp-contact__MaskMedia {
+        display: none;
+    }
+}
+@media (max-width: 375px) {
+    .contact {
+        top: 110rem;
+    }
+    .tp-contact__BgContact768,
+    .tp-contact__MaskContact768,
+    .tp-contact__BgBus768,
+    .tp-contact__MaskBus768,
+    .tp-contact__BgMedia768,
+    .tp-contact__MaskMedia768 {
+        display: none;
+    }
+    .tp-contact__BgMedia375,
+    .tp-contact__MaskMedia375,
+    .tp-contact__BgBus375,
+    .tp-contact__MaskBus375, 
+    .tp-contact__BgContact375,
+    .tp-contact__MaskContact375 {
+        display: block;
+        position: absolute;
+    }
+    .tp-contact__blocks {
+        gap: 2rem;
+    }
+    .tp-contact__blocks-item {
+        padding: 5rem 2rem;
+    }
+}

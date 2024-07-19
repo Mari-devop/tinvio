@@ -11,7 +11,10 @@ body, html {
     padding: 0 1rem; 
     max-width: 1200px; 
 }
+.tp-footer__foot--small2 {
+    display: none;
 
+}
 .tp-header {
     display: flex;
     justify-content: space-between;

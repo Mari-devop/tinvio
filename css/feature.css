@@ -32,8 +32,8 @@
 }
 .tp-feature__text {
     position: relative;
-    top: -5rem;
-    right: -5rem;
+    top: 5rem;
+    right: -8rem;
 }
 .tp-feature__text-title {
     padding-bottom: 1rem;
@@ -55,6 +55,10 @@
 .bg-grey-mob {
     display: none;
 }
+.patern2 {
+    left: 60rem;
+    bottom: 15rem;
+}
 @media (max-width: 1440px) {
     .bg-grey {
         top: -20rem;
@@ -66,6 +70,9 @@
     .patern2 {
         bottom: 15rem;
         left: 70rem;
+    }
+    .tp-feature__text {
+        top: -3rem;
     }
 }
 
@@ -123,6 +130,8 @@
     }
     .features {
         z-index: 2;
+        left: 4rem;
+        top: 0rem;
     }
     .bg-grey {
         display: none;
@@ -167,6 +176,7 @@
         height: 300px;
         width: 300px;
         top: 15rem;
+        left: 2rem;
     }
     .patern1 {
         top: -10rem;

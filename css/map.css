@@ -97,6 +97,9 @@
     display: none;
 }
 
+
+
+
 @media (max-width: 1544px) {
     .tp-map__images-tittle {
         left: 25rem;

@@ -1,0 +1,128 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.tp-container {
+    position: relative;
+    margin: 1rem auto;
+    padding: 0 1rem;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cities {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 5rem;
+    position: relative;
+    top: 50rem;
+}
+
+.tp-cities__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    flex: 1;
+}
+
+.tp-cities__grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.tp-cities__text {
+    position: relative;
+    flex: 1;
+    text-align: left;
+}
+
+.tp-cities__text img {
+    position: absolute;
+}
+
+.tp-cities__shine {
+    top: -2rem;
+    left: -2rem;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+.tp-cities__patern {
+    bottom: 14rem;
+    right: -2rem;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+.tp-cities__title {
+    text-align: left;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    max-width: 300px;
+}
+
+.tp-cities__btn {
+    background-color: var(--white-color);
+    color: var(--main-text-color);
+    padding: 1rem 2rem;
+    border: 1px solid var(--main-text-color);
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+    .cities {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        top: 70rem;
+    }
+
+    .tp-cities__grid {
+        grid-template-columns: 1fr 1fr;
+        order: 2;
+    }
+
+    .tp-cities__text {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .cities {
+        top: 110rem;
+    }
+    .tp-cities__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tp-cities__text {
+        text-align: center;
+    }
+
+    .tp-cities__shine {
+        top: -1rem;
+        left: -1rem;
+    }
+
+    .tp-cities__patern {
+        bottom: -1rem;
+        right: -1rem;
+    }
+
+    .tp-cities__title {
+        font-size: 1.5rem;
+    }
+}

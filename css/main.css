@@ -107,6 +107,10 @@
 .tp-main__images-mobile {
     display: none;
 }
+
+
+
+
 @media (max-width: 1440px) {
     .bg-light {
         bottom: 1rem;
