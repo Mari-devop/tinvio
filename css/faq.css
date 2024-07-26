@@ -34,6 +34,9 @@
 
 .tp-faq__icon {
     font-size: 1.5rem;
+    cursor: pointer;
+    border: none;
+    background: none;
 }
 
 .tp-faq__answer {
@@ -41,28 +44,4 @@
     padding: 1rem;
     margin-top: -0.5rem;
     color: var(--second-text-color);
-}
-.tp-faq__shine,
-.tp-faq__left,
-.tp-faq__up,
-.tp-faq__down {
-    position: absolute;
-}
-
-.tp-faq__left {
-    top: 5rem;
-    left: -34rem;
-}
-.tp-faq__shine {
-    top: 10rem;
-    left: -14rem;
-    z-index: -1;
-}
-.tp-faq__up {
-    top: 0rem;
-    right: -35rem;
-}
-.tp-faq__down {
-    bottom: -20rem;
-    right: -35rem;
 }

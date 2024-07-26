@@ -64,70 +64,72 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// slider section
+//slider section
+
 document.addEventListener('DOMContentLoaded', () => {
-    const slides = document.querySelectorAll('.tp-slider__image');
-    const paginationItems = document.querySelectorAll('.tp-slider__pagination-item');
     let currentSlide = 0;
+    const totalSlides = document.querySelectorAll('.tp-slider__pagination-item').length;
 
-    function getImageSrc(baseName, width) {
-        if (width <= 375) return `./images/slider-section/${baseName}375.png`;
-        if (width <= 768) return `./images/slider-section/${baseName}768.png`;
-        if (width <= 1024) return `./images/slider-section/${baseName}1024.png`;
-        if (width <= 1440) return `./images/slider-section/${baseName}1440.png`;
-        return `./images/slider-section/${baseName}1920.png`;
-    }
-
-    function updateSlideImages() {
-        const width = window.innerWidth;
-        const imageNames = ['cup', 'egg', 'milk', 'spoon'];
+    const showSlide = (index) => {
+        const texts = document.querySelectorAll('.tp-slider__text');
+        const companies = document.querySelectorAll('.tp-slider__company');
+        const mains = document.querySelectorAll('.tp-slider__main');
         
-        slides.forEach((slide, index) => {
-            slide.src = getImageSrc(imageNames[index], width);
-        });
-    }
+        texts.forEach((text) => text.classList.remove('active'));
+        companies.forEach((company) => company.classList.remove('active'));
+        mains.forEach((main) => main.classList.remove('active'));
+        
+        document.querySelector(`.tp-slider__text[data-slide="${index}"]`).classList.add('active');
+        document.querySelector(`.tp-slider__company[data-slide="${index}"]`).classList.add('active');
+        document.querySelector(`.tp-slider__main[data-slide="${index}"]`).classList.add('active');
+    };
 
-    function showSlide(index) {
-        slides.forEach((slide, i) => {
-            slide.classList.toggle('active', i === index);
-        });
-        paginationItems.forEach((item, i) => {
-            item.classList.toggle('active', i === index);
-        });
-    }
-
-    paginationItems.forEach((item, index) => {
+    document.querySelectorAll('.tp-slider__pagination-item').forEach((item) => {
         item.addEventListener('click', () => {
-            currentSlide = index;
+            currentSlide = parseInt(item.getAttribute('data-slide'));
             showSlide(currentSlide);
         });
     });
 
-    window.addEventListener('resize', updateSlideImages);
+    document.querySelector('.tp-slider__leftBtn').addEventListener('click', () => {
+        currentSlide = (currentSlide > 0) ? currentSlide - 1 : totalSlides - 1;
+        showSlide(currentSlide);
+    });
 
-    updateSlideImages(); 
-    showSlide(currentSlide); 
+    document.querySelector('.tp-slider__rightBtn').addEventListener('click', () => {
+        currentSlide = (currentSlide < totalSlides - 1) ? currentSlide + 1 : 0;
+        showSlide(currentSlide);
+    });
+
+ 
+    showSlide(currentSlide);
 });
 
 //faq section
 document.addEventListener('DOMContentLoaded', () => {
-    const faqItems = document.querySelectorAll('.tp-faq__question');
+    const faqIcons = document.querySelectorAll('.tp-faq__icon');
 
-    faqItems.forEach(item => {
-        item.addEventListener('click', () => {
-            const answerId = item.getAttribute('data-answer');
+    faqIcons.forEach(icon => {
+        icon.addEventListener('click', (event) => {
+            // Prevent event bubbling up to parent elements
+            event.stopPropagation();
+
+            const question = icon.parentElement;
+            const answerId = question.getAttribute('data-answer');
             const answer = document.getElementById(answerId);
 
             if (answer.style.display === 'block') {
                 answer.style.display = 'none';
-                item.querySelector('.tp-faq__icon').textContent = '+';
+                icon.textContent = '+';
             } else {
                 answer.style.display = 'block';
-                item.querySelector('.tp-faq__icon').textContent = '-';
+                icon.textContent = '-';
             }
         });
     });
 });
+
+
 
 
 //popup
@@ -186,4 +188,47 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+//privite section
+document.addEventListener('DOMContentLoaded', () => {
+    const tabs = document.querySelectorAll('.tp-privacy__title-tab');
+    const contents = document.querySelectorAll('.tp-privacy__content');
+
+    const showTab = (tabId) => {
+        tabs.forEach(tab => {
+            tab.classList.remove('active');
+            if (tab.getAttribute('data-tab') === tabId) {
+                tab.classList.add('active');
+            }
+        });
+
+        contents.forEach(content => {
+            content.classList.remove('active');
+            if (content.id === tabId) {
+                content.classList.add('active');
+            }
+        });
+    };
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            const tabId = tab.getAttribute('data-tab');
+            showTab(tabId);
+            history.replaceState(null, null, `#${tab.id}`);
+        });
+    });
+
+    // Check if there's a hash in the URL and activate the corresponding tab
+    const hash = window.location.hash.substring(1);
+    if (hash) {
+        const tab = document.querySelector(`.tp-privacy__title-tab#${hash}`);
+        if (tab) {
+            const tabId = tab.getAttribute('data-tab');
+            showTab(tabId);
+        }
+    } else {
+        // Initialize the first tab as active if no hash is present
+        tabs[0].classList.add('active');
+        contents[0].classList.add('active');
+    }
+});
 

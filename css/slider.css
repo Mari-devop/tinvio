@@ -1,115 +1,274 @@
 .slider {
     position: relative;
-    top: 13rem;
+    top: 28rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.tp-slider__bg1920 {
+
+.tp-slider__bg1920,
+.tp-slider__mask1920 {
     position: absolute;
     top: 5rem;
-    left: -18rem;
+    left: -15rem;
+    z-index: -1;
 }
+.tp-slider__bg768,
+.tp-slider__mask768,
+.tp-slider__rect-small768,
+.tp-slider__rect-grey768 {
+    display: none;
+}
+
 .tp-slider {
     position: relative;
-    top: 23rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;  
+    justify-content: center;
+    top: 22rem;
 }
-.tp-slider__tittle{
+
+.tp-slider__tittle {
     position: relative;
     color: var(--white-color);
+    right: -10rem;
     bottom: 3rem;
+    font-family: var(--font-family-primary);
+    font-size: 44px;
+    font-weight: 600;
 }
-.tp-slider__image-1920 {
-    display: none;
-    width: 100%;
-    height: auto;
+
+.tp-slider__rect-grey {
+    position: absolute;
+    top: 2rem;
+    left: 3rem;
+    z-index: -1;
 }
-.tp-slider__image-1920.active {
-    display: block;
-}
-.tp-slider__pagination {
+
+.tp-slider__rect-small {
     position: relative;
-    top: 40rem;
-    right: 40rem;
-    display: flex;
-    gap: 1rem;
+    top: 1rem;
+    left: 5rem;
+    z-index: -1;
 }
+
+.tp-slider__text,
+.tp-slider__company,
+.tp-slider__main {
+    display: none;
+}
+
+.tp-slider__text.active {
+    display: block;
+    position: relative;
+    top: -5rem;
+    left: 1rem;
+    color: var(--second-text-color);
+    font-family: var(--font-family-secondary);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    width: 750px;
+}
+
+.tp-slider__company.active {
+    display: block;
+    position: absolute;
+    top: 13rem;
+    left: 5rem;
+}
+
+.tp-slider__button-left,
+.tp-slider__button-right {
+    position: absolute;
+    top: 10rem;
+    border: none;
+    background-color: transparent;
+}
+
+.tp-slider__button-left {
+    left: 5rem;
+    top: 18rem;
+}
+
+.tp-slider__button-right {
+    right: 46rem;
+    top: 18rem;
+}
+
+.tp-slider__main.active {
+    display: block;
+    position: absolute;
+    top: 3rem;
+    left: 50rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tp-slider__quotes {
+    position: relative;
+    top: -38rem;
+    left: 25rem;
+}
+
 .tp-slider__pagination-item {
+    position: relative;
     cursor: pointer;
     width: 1rem;
     height: 1rem;
+    top: 43rem;
+    left: -25rem;
 }
-.tp-slider__bgsmall {
-    display: none;
-}
+
 @media (max-width: 1440px) {
     .slider {
-        top: 1rem;
+        top: 18rem;
     }
 }
+
 @media (max-width: 1280px) {
-    .tp-slider__pagination {
-        right: 30rem;
-    }
     .slider {
-        top: -1rem;
+        top: 15rem;
+    }
+    .tp-slider__tittle  {
+        font-size: 36px;
+    }
+    .tp-slider__text.active {
+        font-size: 18px;
+    }
+    .tp-slider__pagination {
+      width: 100%;
+      display: flex;
+      gap: 1rem;
     }
 }
+
 @media (max-width: 1024px) {
     .slider {
-        top: -30rem;
+        top: 10rem;
     }
-}
-@media (max-width: 768px) {
-    .slider {
-        top: 8rem;
+    .tp-slider__rect-grey {
+        width: 990px;
+        height: 377px;
     }
-    .tp-slider__bgsmall {
-        display: block;
-        position: absolute;
-        top: 15rem;
-        left: 0rem;
-        z-index: -1;
+    .tp-slider__text.active  {
+        width: 541px;
+        font-size: 18px;
+        line-height: 24px;
+        left: -6rem;
+        top: -6rem;
     }
-    .tp-slider__bg1920 {
-        display: none;
+    .tp-slider__main.active {
+        top: 3rem;
+        left: 40rem;
     }
-    .tp-slider__image-1920 {
-        position: relative;
-        top: 12rem;
-        left: 3rem;
+    .tp-slider__tittle {
+        font-size: 32px;
+        right: -8rem;
+        bottom: 3rem;
     }
     .tp-slider__pagination {
         top: 60rem;
         right: 15rem;
-        z-index: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .slider {
+        top: 60rem;
+    }
+    .tp-slider__bg1920,
+    .tp-slider__mask1920,
+    .tp-slider__rect-small,
+    .tp-slider__leftBtn,
+    .tp-slider__rect-grey,
+    .tp-slider__rightBtn   {
+        display: none;
+    }
+    .tp-slider__bg768,
+    .tp-slider__mask768 {
+        display: block;
+        position: absolute;
+        top: 8rem;
+        left: -1rem;
+        z-index: -1;
+    }
+    .tp-slider__rect-small768,
+    .tp-slider__rect-grey768 {
+        display: block;
+        position: absolute;
+        z-index: -1;
+    }
+    .tp-slider__rect-grey768 {
+        top: 10rem;
+        left: 8rem;
+    }
+    .tp-slider__rect-small768 {
+        top: 33rem;
+        left: 8rem;
+    }
+    .tp-slider__text.active {
+        width: 418px; 
+        top: 31.5rem;
+        left: 9rem;
+    }
+    .tp-slider__main.active {
+        top: 11rem;
+        left: 15rem;
     }
     .tp-slider__tittle {
-        bottom: -10rem;
-        left: 3rem;
+        bottom: -5rem;
+        left: 11rem;
         z-index: 1;
+        font-size: 32px;
+    }
+    .tp-slider__company.active {
+        top: 43rem;
+        left: 11rem;
+    }
+    .tp-slider__pagination-item {
+        top: 70rem;
+        left: -5rem;
     }
 }
 
 @media (max-width: 375px) {
     .slider {
-        top: 3rem;
+        top: 53rem;
     }
     .tp-slider__tittle {
-        bottom: -15rem;
+        bottom: -5rem;
         left: 5rem;
         z-index: 1;
-        
+        font-size: 28px;
     }
-    .tp-slider__image-1920 {
-        top: 20rem;
+    .tp-slider__rect-grey768 {
+        width: 343px;
+        height: 550px;
+        left: 2rem;
     }
-    .tp-slider__pagination {
+    .tp-slider__rect-small768 {
+       display: none;
+    }
+    .tp-slider__main.active{
+        width: 158px;
+        height: 235px;
+        left: 9rem;
+    }
+    .tp-slider__text.active {
+        font-size: 16px;
+        width: 287px;
+        top: 25rem;
+        left: 5rem;
+    }
+    .tp-slider__company.active {
+        top: 38rem;
+        left: 5rem;
+    }
+    .tp-slider__pagination-item {
         top: 65rem;
-        right: 7rem;
+        left: -8rem;
     }
 }

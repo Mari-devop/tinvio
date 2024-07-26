@@ -27,6 +27,7 @@ footer, header, hgroup, menu, nav, section {
 body {
     line-height: 1;
     background-color: var(--white-color);
+    font-family: var(--font-family-primary);
 }
 
 ol, ul, li {

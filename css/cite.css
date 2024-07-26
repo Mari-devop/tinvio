@@ -7,6 +7,7 @@
     top: 10rem;
     left: -22rem;
     z-index: -1;
+    width: 1686px;
 }
 .tp-cite__bgMask768, 
 .tp-cite__bg768,
@@ -16,17 +17,19 @@
 }
 .tp-cite__shine {
     position: absolute;
-    top: 11rem;
-    left: 6rem;
+    top: 15rem;
+    left: 24rem;
 }
 .tp-cite__text {
     position: relative;
-    top: 13rem;
-    left: -15rem;
+    top: 15rem;
+    left: -5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    font-size: 44px;
+    font-family: var(--font-family-primary);
 }
 .tp-cite__title  {
     color: var(--white-color);
@@ -37,6 +40,11 @@
 .tp-cite__button {
     border-radius: 1rem;
     position: relative;
+    width: 219px;
+    font-size: 20px;
+    font-weight: 700;
+    position: absolute;
+    left: 60rem;
 }
 
 @media (max-width: 1440px) {
@@ -56,7 +64,10 @@
         left: 12rem;
     }
     .tp-cite__button {
-        right: -10rem;
+        left: 50rem;
+    }
+    .tp-cite__text {
+        left: -15rem;
     }
 }
 @media (max-width: 768px) {
@@ -66,7 +77,12 @@
     .tp-cite__text {
         flex-direction: column;
         top: 5rem;
-        left: -10rem;
+        left: -12rem;
+        text-align: center;
+    }
+    .tp-cite__button {
+        left: 29rem;
+        top: 7rem;
     }
     .tp-cite__shine {
         top: 6rem;
@@ -99,8 +115,8 @@
         left: 12rem;
     }
     .tp-cite__button {
-        top: 3rem;
-        left: 12rem;
+        top: 8rem;
+        left: 15rem;
     }
     .tp-cite__bg375,
     .tp-cite__bgMask375 {

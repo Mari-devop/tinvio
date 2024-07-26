@@ -23,9 +23,12 @@ body, html {
     width: 100%;
     gap: 5rem;
     position: relative;
-    top: 50rem;
+    top: 75rem;
 }
-
+.tp-cities__2 {
+    position: relative;
+    top: -3rem;
+}
 .tp-cities__grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -50,7 +53,7 @@ body, html {
 }
 
 .tp-cities__shine {
-    top: -2rem;
+    top: -3rem;
     left: -2rem;
     width: auto;
     height: auto;
@@ -67,9 +70,11 @@ body, html {
 
 .tp-cities__title {
     text-align: left;
-    font-size: 2rem;
+    font-size: 56px;
     margin-bottom: 2rem;
-    max-width: 300px;
+    width: 442px;
+    font-weight: 600;
+    font-family: var(--font-family-primary);
 }
 
 .tp-cities__btn {
@@ -80,6 +85,9 @@ body, html {
     border-radius: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--font-family-primary);
 }
 
 @media screen and (max-width: 768px) {
@@ -87,7 +95,7 @@ body, html {
         flex-direction: column;
         align-items: center;
         gap: 2rem;
-        top: 70rem;
+        top: 110rem;
     }
 
     .tp-cities__grid {
@@ -98,23 +106,26 @@ body, html {
     .tp-cities__text {
         text-align: center;
     }
+    .tp-cities__1,
+    .tp-cities__3 {
+        width: 360px;
+    }
 }
 
 @media screen and (max-width: 375px) {
     .cities {
-        top: 110rem;
+        top: 160rem;
     }
     .tp-cities__grid {
         grid-template-columns: 1fr;
     }
-
     .tp-cities__text {
         text-align: center;
     }
 
     .tp-cities__shine {
-        top: -1rem;
-        left: -1rem;
+        top: -3rem;
+        left: -2rem;
     }
 
     .tp-cities__patern {
@@ -123,6 +134,7 @@ body, html {
     }
 
     .tp-cities__title {
-        font-size: 1.5rem;
+        font-size: 32px;
+        width: 343px;
     }
 }

@@ -53,6 +53,7 @@
 .tp-done__2021-item {
     color: var(--second-text-color);
     font-size: 1.3rem;
+    z-index: 1;
 }
 .tp-done__list {
     position: relative;

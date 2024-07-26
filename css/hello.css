@@ -18,7 +18,7 @@
 .tp-hello__shine {
     position: relative;
     top: -9rem;
-    right: 12rem;
+    right: 14rem;
 }
 .tp-hello__bg {
     position: absolute;
@@ -26,6 +26,9 @@
 }
 .tp-hello__title {
     margin-bottom: 2rem;
+    font-size: 60px;
+    font-weight: 600;
+    font-family: var(--font-family-primary);
 }
 .tp-hello__description {
     color: var(--second-text-color);

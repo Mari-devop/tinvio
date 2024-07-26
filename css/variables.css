@@ -1,9 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Gilroy:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
-
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/fonts/Gilroy-Thin.woff2') format('woff2'),
+         url('/fonts/Gilroy-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Gilroy';
+    src: url('/fonts/Gilroy-Regular.woff2') format('woff2'),
+         url('/fonts/Gilroy-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Gilroy';
+    src: url('/fonts/Gilroy-Medium.woff2') format('woff2'),
+         url('/fonts/Gilroy-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+ 
 :root {
-    --font-family-primary: 'Gilroy', sans-serif;
-    --font-family-secondary: 'Inter', sans-serif;
+    --font-family-primary: 'Gilroy';
+    --font-family-secondary: 'Inter';
     --primary-text-color: #FF474D;
     --main-text-color: #212121;
     --white-color: #FFFFFF;

@@ -1,0 +1,108 @@
+.privacy {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 68px;
+    align-items: center;
+}
+
+.tp-privacy__title {
+    font-size: 44px;
+    font-weight: 500;
+    margin-bottom: 43px;
+    font-family: var(--font-family-primary);
+    text-align: center;
+}
+
+.tp-privacy__title-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 752px;
+    max-width: 100%;
+    margin-bottom: 32px;
+}
+
+.tp-privacy__title-tab {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-family: var(--font-family-primary);
+    text-align: center;
+    cursor: pointer;
+    color: var(--placeholder-text-color);
+    border-bottom: 1px solid var(--placeholder-text-color);
+    width: 100%;
+}
+
+.tp-privacy__title-tab.active {
+    color: var(--primary-text-color);
+    border-bottom: 1px solid var(--primary-text-color);
+}
+
+.tp-privacy__content {
+    display: none;
+    font-family: var(--font-family-secondary);
+    color: var(--second-text-color);
+    font-weight: 400;
+    line-height: 25px;
+    width: 752px;
+}
+.tp-privacy__content-text {
+    font-family: var(--font-family-secondary);
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 400;
+    text-align: justify;
+}
+.tp-privacy__content-list {
+    list-style-type: none; 
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.tp-privacy__content-list li {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 20px; 
+    font-family: var(--font-family-secondary);
+    color: var(--second-text-color);
+    font-weight: 400;
+}
+
+.tp-privacy__content-list li::before {
+    content: "•"; 
+    position: absolute;
+    left: 0;
+    color: var(--second-text-color); 
+    font-size: 16px; 
+    line-height: 23px;
+}
+
+.tp-privacy__content-title {
+    font-family: var(--font-family-primary);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22.05px;
+    margin-bottom: 16px;
+    margin-top: 48px;
+    color: var(--main-text-color);
+}
+.tp-privacy__content.active {
+    display: block;
+}
+
+@media (max-width: 375px) {
+   .tp-privacy__title-tab {
+        font-size: 20px;
+   }
+   .tp-privacy__title {
+        font-size: 28px;
+   }
+   .tp-privacy__content-text {
+        font-size: 14px;
+   }
+   .tp-privacy__content {
+    width: 343px;
+   }
+}

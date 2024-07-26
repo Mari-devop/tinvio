@@ -51,7 +51,7 @@
     display: flex;
     position: relative;
     top: 2rem;
-    left: 12rem;
+    left: 4rem;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -94,12 +94,12 @@
 }
 .tp-orders__invoice-icon {
     position: relative;
-    top: 5rem;
+    top: 7rem;
     left: 2.5rem;
 }
 .tp-orders__invoice-title {
     position: relative;
-    top: 16rem;
+    top: 8rem;
     left: 1rem;
     color: var(--white-color);
     font-size: 1.5rem;

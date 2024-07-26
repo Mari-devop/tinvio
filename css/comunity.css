@@ -21,7 +21,7 @@ body, html {
     justify-content: center;
     align-items: center;
     text-align: center;
-    top: 30rem;
+    top: 60rem;
 }
 .tp-comunity__title {
     font-size: 2rem;
@@ -73,12 +73,12 @@ body, html {
 }
 @media (max-width: 768px) {
     .comunity {
-        top: 60rem;
+        top: 95rem;
     }
 }
 @media (max-width: 375px) {
     .comunity {
-        top: 100rem;
+        top: 150rem;
     }
     .tp-comunity {
         flex-direction: column;

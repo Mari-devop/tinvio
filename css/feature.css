@@ -8,46 +8,61 @@
     gap: 3rem;
 }
 .tp-feature__images {
-    position: relative;
-    bottom: -18rem;
+    position: absolute;
+    bottom: -10rem;
+    width: 561px;
+    height: 495px;
 }
 .features {
     position: relative;
 }
 .bg-grey {
     position: absolute;
-    top: -23rem;
-    left: -12rem;
+    top: -20rem;
+    left: -16rem;
     z-index: -1;
 }
 .patern2 {
     position: absolute;
-    bottom: 20rem;
-    left: 80rem;
+    top: 20rem;
+    right: 20rem;
 }
 .patern1 {
     position: relative;
     top: -2rem;
-    right: 10rem;
+    right: -1rem;
 }
 .tp-feature__text {
     position: relative;
-    top: 5rem;
-    right: -8rem;
+    top: -2rem;
+    right: -45rem;
+    width: 574px;
+    height: 230px;
 }
 .tp-feature__text-title {
     padding-bottom: 1rem;
-    font-weight: 400;
+    font-weight: 600;
+    font-size: 44px;
+    font-family: var(--font-family-primary);
 }
 .tp-feature__text-body {
     padding-bottom: 2rem;
+    font-family: var(--font-family-secondary);
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--second-text-color)
 }
 .tp-feature__text-button {
+    font-family: var(--font-family-primary);
     background-color: var(--white-color);
     border-radius: 1rem;
     padding: 1rem 3rem;
-    font-weight: 700;
-    font-size: 1.1rem;
+    font-weight: 700 !important;
+    font-size: 18px;
+    width: 220px;
+    height: 56px;
+    border: none;
 }
 .play {
     padding-right: 1rem;
@@ -61,7 +76,7 @@
 }
 @media (max-width: 1440px) {
     .bg-grey {
-        top: -20rem;
+        top: -35rem;
         left: -5rem;
     }  
     .tp-feature__images {
@@ -74,12 +89,25 @@
     .tp-feature__text {
         top: -3rem;
     }
+    .features {
+        top: -12rem;
+    }
 }
 
 @media (max-width: 1280px) {
     .patern2 {
         bottom: 15rem;
         left: 60rem;
+    }
+    .tp-feature__text {
+        width: 398px;
+        font-size: 16px;
+    }
+    .tp-feature__text-title {
+        font-size: 36px;
+    }
+    .tp-feature__text-button {
+        font-size: 14px;
     }
 }
 @media (max-width: 1100px) {
@@ -101,7 +129,25 @@
 }
 @media (max-width: 1024px) {
     .feature {
-        top: -25rem;
+        top: -30rem;
+    }
+    .tp-feature__text-title {
+        font-size: 32px;
+        text-align: left;
+    }
+    .tp-feature__text-body {
+        font-size: 16px;
+        text-align: left;
+        width: 356px;
+    }
+    .tp-feature__text {
+        align-items: left;
+        top: 15rem;
+        right: -35rem;
+    }
+    .features {
+        width: 520px;
+        height: 459px;
     }
     .patern1 {
         top: 5rem;
@@ -117,21 +163,31 @@
         gap: 0;
         flex-direction: column;
     }
+    .tp-feature__text-title {
+        font-size: 32px;
+        text-align: center;
+    }
+    .tp-feature__text-body {
+        font-size: 16px;
+        width: 429px;
+        text-align: center;
+    }
     .tp-feature__text {
         order: 1;
-        top: 7rem;
-        right: 0;
+        top: 3rem;
+        right: -4rem;
         margin-bottom: 2rem; 
         z-index: 2;
         width: 70%;
+        align-items: center;
     }
     .tp-feature__images {
         order: 2;
     }
     .features {
-        z-index: 2;
+        z-index: 3;
         left: 4rem;
-        top: 0rem;
+        top: 15rem;
     }
     .bg-grey {
         display: none;
@@ -140,15 +196,16 @@
         display: block;
         z-index: 1;
         position: absolute;
-        top: -35rem;
-        left: -2rem;
+        top: -25rem;
+        left: -6rem;
     }
     .patern1 {
-        top: -40rem;
+        top: -20rem;
+        left: -5rem;
         z-index: 2;
     }
     .patern2 {
-        bottom: 15rem;
+        bottom: -15rem;
         left: 30rem;
         z-index: 2;
     }
@@ -170,13 +227,16 @@
         gap: 3rem;
     }
     .tp-feature__text {
-        top: 23rem;
+        top: 13rem;
+        right: 4rem;
+        align-items: center;
+        text-align: center;
     }
     .features {
-        height: 300px;
-        width: 300px;
-        top: 15rem;
-        left: 2rem;
+        height: 302px;
+        width: 343px;
+        top: 35rem;
+        left: 8rem;
     }
     .patern1 {
         top: -10rem;
@@ -186,5 +246,13 @@
         bottom: 15rem;
         left: 30rem;
         z-index: 2;
+    }
+    .bg-grey-mob {
+        top: -11rem;
+        left: 5rem;
+    }
+    .tp-feature__text-body {
+        font-size: 14px;
+        width: 343px;
     }
 }

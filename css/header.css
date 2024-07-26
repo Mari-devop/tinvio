@@ -11,10 +11,6 @@ body, html {
     padding: 0 1rem; 
     max-width: 1200px; 
 }
-.tp-footer__foot--small2 {
-    display: none;
-
-}
 .tp-header {
     display: flex;
     justify-content: space-between;
@@ -34,10 +30,12 @@ body, html {
 }
 
 .lang__button {
+    font-family: var(--font-family-primary);
+    font-weight: 400;
+    font-size: 18px;
     background: none;
     border: none;
     cursor: pointer;
-    font-size: 1rem;
     display: flex;
     align-items: center;
 }
@@ -49,20 +47,23 @@ body, html {
 }
 
 .lang__dropdown {
-    display: none; /* Add this line to ensure dropdowns are hidden by default */
+    display: none; 
     position: absolute;
-    top: 100%;
     background: #fff;
-    border: 1px solid #ddd;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
     z-index: 10;
     list-style: none;
     margin: 0;
-    width: 100px;
+    width: 48px;
+    height: 139px;
+    padding: 10px;
 }
 
 .lang__dropdown--desktop {
     left: 0;
+    top: 1.5rem;
 }
 
 .lang__dropdown--mobile {
@@ -73,13 +74,13 @@ body, html {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    padding: 10px 0;
     cursor: pointer;
 }
 
 .lang__dropdown li img {
-    width: 70%;
-    height: auto;
+    width: 24px;
+    height: 16px;
 }
 
 .tp-header__nav {
@@ -93,25 +94,36 @@ body, html {
 }
 
 .tp-header__nav-item a {
+    font-family: var(--font-family-primary);
+    font-weight: 400;
+    font-size: 18px;
     text-decoration: none;
     color: var(--main-text-color);
-    padding-right: 4.5rem;
+    padding-right: 72px;
 }
 
-.tp-header__nav-item a:hover {
+.tp-header__nav-item a:hover,
+.tp-header__nav-item a:target  {
     color: var(--primary-text-color);
 }
 
 .tp-header__btn-main {
     background-color: var(--white-color);
     color: var(--main-text-color);
-    padding: 0.8rem 2.3rem;
     border: none;
-    border-radius: 1rem;
+    border-radius: 1.2rem;
     cursor: pointer;
-    font-weight: 700; 
+    font-weight: 700 !important; 
+    font-size: 16.8px;
+    font-family: var(--font-family-primary);
+    width: 156px;
+    height: 48px;
+    margin-right: -6rem;
 }
-
+.main--color {
+    background-color: var(--primary-text-color);
+    color: var(--white-color);
+}
 .tp-header__btn-main-feature {
     background-color: var(--primary-text-color);
     color: var(--white-color);
@@ -191,7 +203,11 @@ body, html {
     border-radius: 1rem;
     cursor: pointer;
     font-weight: 700;
+    font-size: 16.8px;
+    font-family: var(--font-family-primary);
     margin: 12rem auto 1rem;
+    width: 156px;
+    height: 48px;;
 }
 
 .tp-header__social-icon {
@@ -223,6 +239,9 @@ body, html {
     right: -1rem;
 }
 
+
+
+
 @media (max-width: 1440px) {
     .tp-container {
         margin: 1rem 7.75rem;
@@ -232,10 +251,32 @@ body, html {
         padding-right: 1rem;
     }
 }
-
+@media (max-width: 1280px) {
+    .tp-header__nav-item a {
+        font-size: 16px;
+    }
+    .tp-header__btn-main {
+        font-size: 16px;
+    }
+}
 @media (max-width: 1024px) {
     .tp-container {
-        margin: 1rem 2.5rem;
+        margin: 24px 40px;
+    }
+    .tp-header__nav-list {
+        gap: 72px;
+    }
+    .tp-header__logo-img {
+        width: 114px;
+    }
+    .lang__button {
+        font-size: 16px;
+    }
+    .tp-header__btn-main {
+        width: 129px;
+        height: 40px;
+        font-size: 14px;
+       margin-right: 10px;
     }
 }
 
