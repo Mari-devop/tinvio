@@ -1,50 +1,50 @@
 @font-face {
-    font-family: 'Gilroy';
-    src: url('/fonts/Gilroy-Thin.woff2') format('woff2'),
-         url('/fonts/Gilroy-Thin.woff') format('woff');
-    font-weight: 100;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'Gilroy';
-    src: url('/fonts/Gilroy-Regular.woff2') format('woff2'),
-         url('/fonts/Gilroy-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'Gilroy';
-    src: url('/fonts/Gilroy-Medium.woff2') format('woff2'),
-         url('/fonts/Gilroy-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'Inter';
-    src: url('/fonts/Inter-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-  }
-  
- 
+  font-family: 'Gilroy';
+  src: url('../fonts/Gilroy-Thin.woff2') format('woff2'),
+       url('../fonts/Gilroy-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/Gilroy-Regular.woff2') format('woff2'),
+       url('../fonts/Gilroy-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/Gilroy-Medium.woff2') format('woff2'),
+       url('../fonts/Gilroy-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 :root {
-    --font-family-primary: 'Gilroy';
-    --font-family-secondary: 'Inter';
-    --primary-text-color: #FF474D;
-    --main-text-color: #212121;
-    --white-color: #FFFFFF;
-    --second-text-color: #5C5C5C;
-    --placeholder-text-color: #BDBDBD;
-    --light-grey-text-color: #d4d4d4;
-    --input-color: #F3F4F5;
-    --bg-grey-color: #F3F4F5;
-    --bg-black-color: #363636;
-    --bg-el-15: radial-gradient(#DADADA26 15%, #FAFAFA26 15%);
-    --bg-el-20: radial-gradient(#FFFFFF 20%, #FAFAFA 20%);
-    --bg-el-60: radial-gradient(#FFFFFF 60%, #FAFAFA 60%);
-    --bg-el-50: radial-gradient(#F6F5F580 50%, #FAFAFA 50%);
-    --primary-btn-color: #FF474D;
+  --font-family-primary: 'Gilroy';
+  --font-family-secondary: 'Inter';
+  --primary-text-color: #FF474D;
+  --main-text-color: #212121;
+  --white-color: #FFFFFF;
+  --second-text-color: #5C5C5C;
+  --placeholder-text-color: #BDBDBD;
+  --light-grey-text-color: #d4d4d4;
+  --input-color: #F3F4F5;
+  --bg-grey-color: #F3F4F5;
+  --bg-black-color: #363636;
+  --bg-el-15: radial-gradient(#DADADA26 15%, #FAFAFA26 15%);
+  --bg-el-20: radial-gradient(#FFFFFF 20%, #FAFAFA 20%);
+  --bg-el-60: radial-gradient(#FFFFFF 60%, #FAFAFA 60%);
+  --bg-el-50: radial-gradient(#F6F5F580 50%, #FAFAFA 50%);
+  --primary-btn-color: #FF474D;
 }
