@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        if (currentUrl === '/' || currentUrl.endsWith('index.html')) {
+        if (currentUrl === '/' || currentUrl === '/tinvio/' || currentUrl.endsWith('index.html')) {
             document.getElementById('home').classList.add('active');
         }
     };
@@ -65,6 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
     updateActiveLink();
     window.addEventListener('hashchange', updateActiveLink);
 });
+
 
 
 
