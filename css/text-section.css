@@ -19,7 +19,7 @@
 .tp-hero__shine {
     position: absolute;
     top: -50px; 
-    left: 10px; 
+    left: 0px; 
     width: 100px; 
     height: auto; 
 }
