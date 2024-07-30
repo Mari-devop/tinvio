@@ -57,8 +57,9 @@
     width: 220px;
     border: none;
     font-family: var(--font-family-primary);
-    font-weight: 700;
+    font-weight: 700 !important;
     font-size: 20px;
+    cursor: pointer;
 }
 .tp-main__images {
     flex: 0 0 70%;
@@ -88,7 +89,7 @@
     position: relative;
     height: 100%; 
     width: 920px; 
-    top: -4rem;
+    top: -3rem;
     left: -12rem;
 }
 .patern--small {

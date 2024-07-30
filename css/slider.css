@@ -85,6 +85,7 @@
     top: 10rem;
     border: none;
     background-color: transparent;
+    cursor: pointer;
 }
 
 .tp-slider__button-left {
@@ -107,12 +108,6 @@
     justify-content: center;
 }
 
-.tp-slider__quotes {
-    position: relative;
-    top: -38rem;
-    left: 25rem;
-}
-
 .tp-slider__pagination-item {
     position: relative;
     cursor: pointer;
@@ -120,8 +115,15 @@
     height: 1rem;
     top: 43rem;
     left: -25rem;
+    opacity: 0.5;
+}
+.tp-slider__pagination-item.active {
+    opacity: 1; /* Полная непрозрачность для активного элемента */
 }
 
+.tp-slider__pagination-item.inactive {
+    opacity: 0.5; /* Полупрозрачный для неактивных элементов */
+}
 @media (max-width: 1440px) {
     .slider {
         top: 18rem;

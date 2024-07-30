@@ -45,6 +45,7 @@
     font-weight: 700;
     position: absolute;
     left: 60rem;
+    cursor: pointer;
 }
 
 @media (max-width: 1440px) {

@@ -63,6 +63,7 @@
     width: 220px;
     height: 56px;
     border: none;
+    cursor: pointer;
 }
 .play {
     padding-right: 1rem;
