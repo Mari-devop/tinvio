@@ -40,19 +40,30 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     });
-    const currentUrl = window.location.pathname;
-    const navLinks = document.querySelectorAll('.tp-header__nav-item a');
 
-    navLinks.forEach(link => {
-        const linkHref = link.getAttribute('href').split('#')[0];
-        if (currentUrl.includes(linkHref)) {
-            link.classList.add('active');
+    const updateActiveLink = () => {
+        const currentUrl = window.location.pathname;
+        const currentHash = window.location.hash;
+        const navLinks = document.querySelectorAll('.tp-header__nav-item a');
+
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            const linkHref = link.getAttribute('href');
+            const linkPath = linkHref.split('#')[0];
+            const linkHash = '#' + linkHref.split('#')[1];
+
+            if ((currentUrl.includes(linkPath) && !linkHash) || (currentUrl.includes(linkPath) && currentHash === linkHash)) {
+                link.classList.add('active');
+            }
+        });
+
+        if (currentUrl === '/' || currentUrl.endsWith('index.html')) {
+            document.getElementById('home').classList.add('active');
         }
-    });
+    };
 
-    if (currentUrl === '/' || currentUrl.endsWith('index.html')) {
-        document.getElementById('home').classList.add('active');
-    }
+    updateActiveLink();
+    window.addEventListener('hashchange', updateActiveLink);
 });
 
 
